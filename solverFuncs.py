@@ -2,9 +2,7 @@ def check_rows_valid(puzzle):
 	for i in range(len(puzzle)):
 		if check_row(puzzle[i]) == False: 
 			return False 	
-		else:			
-			func_works = True 
-	return func_works
+	return True
 	 
 def check_row(row):
 	for i in range(len(row)):
@@ -17,9 +15,7 @@ def check_columns_valid(puzzle):
 	for i in range(len(puzzle)):		
 		if check_column(puzzle, i) == False: 
 			return False		
-		else:			
-			func_works = True
-	return func_works
+	return True
 
 def check_column(puzzle, col_num):
 	col_list = []
